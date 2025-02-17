@@ -17,7 +17,7 @@ import {
       fatRatio: string;
       calorieAdjustment: string;
     };
-    onModifiersChange: (modifiers: any) => void;
+    onModifiersChange: (modifiers: ModifiersFormProps['modifiers']) => void;
   }
   
   export function ModifiersForm({ modifiers, onModifiersChange }: ModifiersFormProps) {

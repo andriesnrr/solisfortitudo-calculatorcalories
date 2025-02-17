@@ -10,7 +10,7 @@ interface StatsFormProps {
     height: string;
     gender: 'male' | 'female';
   };
-  onStatsChange: (stats: any) => void;
+  onStatsChange: (stats: StatsFormProps['stats']) => void;
 }
 
 export function StatsForm({ stats, onStatsChange }: StatsFormProps) {

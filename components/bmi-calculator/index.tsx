@@ -42,13 +42,13 @@ export function BMICalculator() {
     const heightInInches = heightCm / 2.54;
     const baseHeight = 60;
     const extraInches = heightInInches - baseHeight;
-
-    let baseWeight = gender === 'male' ? 106 : 100;
-    let weightPerInch = gender === 'male' ? 6 : 5;
-
+  
+    const baseWeight = gender === 'male' ? 106 : 100;
+    const weightPerInch = gender === 'male' ? 6 : 5;
+  
     const idealWeightLbs = baseWeight + (extraInches * weightPerInch);
     const idealWeightKg = idealWeightLbs * 0.453592;
-
+  
     return {
       min: Math.round(idealWeightKg * 0.9),
       max: Math.round(idealWeightKg * 1.1),
