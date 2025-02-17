@@ -3,8 +3,8 @@ import { BMICalculator } from "@/components/bmi-calculator"
 
 export const metadata: Metadata = {
   title: "BMI Calculator | Solisfortitudo",
-  description: "Calculate and monitor your Body Mass Index (BMI) to check if you&apos;re at a healthy weight.",
-};
+  description: "Calculate your Body Mass Index (BMI) and understand what it means for your health.",
+}
 
 export default function BMIPage() {
   return (
@@ -15,7 +15,7 @@ export default function BMIPage() {
             BMI Calculator
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Calculate your Body Mass Index (BMI) to check if you're at a healthy weight.
+            Calculate your Body Mass Index (BMI) to check if you&apos;re at a healthy weight.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function BMIPage() {
 
           <div className="text-xs border-t pt-4">
             <p>
-              Note: BMI is a general indicator and doesn't account for factors like muscle mass, age, or gender.
+              Note: BMI is a general indicator and doesn&apos;t account for factors like muscle mass, age, or gender.
             </p>
           </div>
         </div>
